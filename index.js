@@ -120,6 +120,7 @@ function handleRestart() {
     $('.finish').addClass('hidden');
     question = 0;
     score = 0;
+    $('.right').text('Go for the next hold.');
   });
 }
 
