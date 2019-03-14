@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 10px;
+  background-color: rgb(226, 225, 225);
+  text-shadow: 1px 1px 1px white;
+}
+
+.logo {
+  border: 1px solid black;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px grey;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.scoreArea {
+  float: right;
+  font-size: 1.2rem;
+}
+
+.margin-control {
+  margin: 5px;
+}
+
+
+.answerArea-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.answerArea {
+  font-size: 1.6rem;
+}
+
+.answerArea-text > div {
+  margin: 8px;
+  background-color: lightblue;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px 10px;
+  box-shadow: 10px 10px 5px grey;
+}
+
+.answerArea-text > div:hover {
+  background-color: rgb(150, 198, 230);
+}
+
+.questionArea {
+  margin: 5px 0;
+  text-align: center;
+}
+
+
+.questionArea > p {
+  font-size: 1.8rem;
+  margin: 10px;
+}
+
+.questionArea > span {
+  font-size: 2.5rem;
+  text-decoration: underline;
+}
+
+.rightArea {
+  margin: 25px;
+}
+
+.rightArea-text > p > img {
+  width: 65%;
+  box-shadow: 2px 2px 2px black;
+}
+
+.rightArea-text > * {
+  text-align: center;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+
+.finish-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.finish-text > p {
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.correct {
+  border: 2px dashed green;
+  border-radius: 10px;
+}
+
+.incorrect {
+  border: 2px dashed red;
+  border-radius: 10px;
+}
+
+input {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+button {
+  margin: 25px auto;
+  display: block;
+  width: 80%;
+  height: auto;
+  font-family: 'Lilita One', cursive;
+  font-size: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: lightgoldenrodyellow;
+  box-shadow: 10px 10px 5px grey;
+}
+
+button:hover {
+  background-color: rgb(228, 228, 137);
+}
+
+.shrink {
+  width: 100px;
+  display: inline-block;
+  margin: 0;
+  box-shadow: 5px 5px 3px grey;
+}
+
+.hidden {
+  display: none;
+}

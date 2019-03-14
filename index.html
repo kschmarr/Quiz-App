@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Rock Climbing Destinations Quiz</title>
+    <meta name="description" content="Find out if you know your way around the world of rock climbing">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="destinations.js"></script>
+  </head>
+  <body>
+    <header role="banner">
+      <div class="logoArea">
+        <a href="index.html">
+          <img class="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDo6ynTbigXFLqNAUcVZdxcM825scNkDWmwokNNjB8Wj2zY2FT" alt="mountain outline with text that says rock climbing"/>
+        </a>
+      </div>
+      <div class="scoreArea hidden">
+        <div>
+          <p class="margin-control">Question: <span class="question"> </span> /10</p>
+        </div>
+        <div>
+          <p class="margin-control"> Score: <span class="score"> </span></p>
+        </div>
+      </div>
+    </header>
+    <main role="main">
+      <form class="start">
+        <h1>Do you have rocks for brains? <br>Let's find out!</h1>
+        <button type="submit" class="startBtn">Climb On</button>
+      </form>
+      <div class="questionArea hidden"></div>
+      <form class="answerArea hidden">
+        <div class="answerArea-text"></div>
+        <div>
+          <button type="submit" class="go">Go for it!</button>
+        </div>
+      </form>
+      <form class="rightArea hidden">
+        <div class="rightArea-text"></div>
+        <div>
+          <button type="submit" class="right">Go for the next hold.</button>
+        </div>
+      </form>
+      <form class="finish hidden">
+        <div class="finish-text"></div>
+        <div>
+          <button type="submit">Dirt me. (Restart)</button>
+        </form>
+      </div>
+    </main>
+  <script src="index.js"></script>
+  </body>
+</html>
