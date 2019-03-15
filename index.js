@@ -36,13 +36,13 @@ function handleSubmission(answer) {
   $('.go').text('Keep going!');
   if (answer === DEST[question].answer) {
     score++;
-    $('.rightArea-text').html(`<p>You latched it!</p><p><img src="${DEST[question].picture}" alt="A picture of ${DEST[question].name}"></p><p>${DEST[question].name} is located in ${DEST[question].location}. The rock type is ${DEST[question].rock}, and the primary climbing discipline is ${DEST[question].style}.<p>`);
+    $('.rightArea-text').html(`<p>You latched it!</p><p><img src="${DEST[question].picture}" alt="A picture of ${DEST[question].name}"></p><p>${DEST[question].name} is located in ${DEST[question].location}.<br>The rock type is ${DEST[question].rock}, and the primary climbing discipline is ${DEST[question].style}.<p>`);
     $('.rightArea').removeClass('incorrect');
     $('.rightArea').addClass('correct');
   } else {
     $('.rightArea').removeClass('correct');
     $('.rightArea').addClass('incorrect');
-    $('.rightArea-text').html(`<p>You slipped!</p><p><img src="${DEST[question].picture}" alt="A picture of ${DEST[question].name}"></p><p>${DEST[question].name} is located in ${DEST[question].location}. The rock type is ${DEST[question].rock}, and the primary climbing discipline is ${DEST[question].style}.<p>`);
+    $('.rightArea-text').html(`<p>You slipped!</p><p><img src="${DEST[question].picture}" alt="A picture of ${DEST[question].name}"></p><p>${DEST[question].name} is located in ${DEST[question].location}.<br>The rock type is ${DEST[question].rock}, and the primary climbing discipline is ${DEST[question].style}.<p>`);
   }
   toggleRightArea();
   $('.score').html(`${score}`);

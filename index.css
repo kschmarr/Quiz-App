@@ -16,6 +16,10 @@ html {
   box-shadow: 10px 10px 5px grey;
 }
 
+header {
+  padding: 0 30%;
+}
+
 h1 {
   text-align: center;
   margin-top: 50px;
@@ -24,7 +28,7 @@ h1 {
 .scoreArea {
   float: right;
   font-size: 1.2rem;
-  margin-right: 10%;
+  /* margin-right: 10%; */
 }
 
 .margin-control {
@@ -74,10 +78,14 @@ h1 {
 
 .rightArea {
   margin: 25px;
+  width: 70%;
+  margin: 10px auto;
 }
 
 .rightArea-text > p > img {
   width: 65%;
+  max-width: 400px;
+  min-width: 150px;
   box-shadow: 2px 2px 2px black;
 }
 
@@ -118,6 +126,7 @@ button {
   margin: 25px auto;
   display: block;
   width: 80%;
+  max-width: 600px;
   height: auto;
   font-family: 'Lilita One', cursive;
   font-size: 2rem;
@@ -135,10 +144,16 @@ button:hover {
   width: 100px;
   display: inline-block;
   margin: 0;
-  margin-left: 10%;
+  /* margin-left: 10%; */
   box-shadow: 5px 5px 3px grey;
 }
 
 .hidden {
   display: none;
+}
+
+@media screen and (max-width: 650px) {
+    header {
+        padding: 20px;
+    }
 }
