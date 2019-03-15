@@ -154,6 +154,12 @@ button:hover {
 
 @media screen and (max-width: 650px) {
     header {
-        padding: 20px;
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        padding: 0 5%;
     }
 }
